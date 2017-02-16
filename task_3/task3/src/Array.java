@@ -33,7 +33,7 @@ public class Array {
         return sum;
     }
 
-    private int amountNegatinAndPositiv() {
+    private void amountNegatinAndPositiv() {
         int negative = 0;
         int possitive = 0;
         int i = 0;
@@ -44,14 +44,13 @@ public class Array {
 
             i++;}
         System.out.println("Amount negative = " + negative +  " \nAmount positive = " + possitive);
-        return possitive;
     }
 
     public static void main(String[] args) {
         Array array = new Array();
         array.maxElement();
         array.sumPossitive();
-        System.out.println(array.amountNegatinAndPositiv());
+       array.amountNegatinAndPositiv();
     }
 }
 
